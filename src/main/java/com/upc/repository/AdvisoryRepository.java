@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.upc.model.Advisory;
 
 @Repository
-public interface AdvisoryRepository extends CrudRepository<Advisory, Long> {
+public interface AdvisoryRepository extends CrudRepository<Advisory, Integer> {
 
 }

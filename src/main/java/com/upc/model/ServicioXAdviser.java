@@ -20,7 +20,7 @@ public class ServicioXAdviser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idServicioAdviser;
+    private Integer idServicioAdviser;
 
 
     @Column(name = "HORA_INICIO", length = 8, nullable = false)
@@ -45,7 +45,7 @@ public class ServicioXAdviser {
 
     }
 
-    public ServicioXAdviser(Long idServicioAdviser,String horaInicio, String horaFin,
+    public ServicioXAdviser(Integer idServicioAdviser,String horaInicio, String horaFin,
                             Adviser adviser,Servicio servicio, Set<Advisory> advisories) {
 
         this.idServicioAdviser = idServicioAdviser;
@@ -57,11 +57,11 @@ public class ServicioXAdviser {
 
     }
 
-    public Long getIdServicioAdviser() {
+    public Integer getIdServicioAdviser() {
         return idServicioAdviser;
     }
 
-    public void setIdServicioAdviser(Long idServicioAdviser) {
+    public void setIdServicioAdviser(Integer idServicioAdviser) {
         this.idServicioAdviser = idServicioAdviser;
     }
 

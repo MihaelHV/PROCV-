@@ -15,7 +15,7 @@ import javax.persistence.Table;
 public class Servicio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idServicio;
+    private Integer idServicio;
 
     @Column(name = "NOMBRE_SERVICIO", length = 100, nullable = false)
     private String serviceName;
@@ -26,15 +26,14 @@ public class Servicio {
     @OneToMany(mappedBy = "servicio")
     Set<ServicioXAdviser> serviciosAdviser;
 
-    public Long getIdServicio() {
+
+    public Integer getIdServicio() {
         return idServicio;
     }
 
-    public void setIdServicio(Long idServicio) {
+    public void setIdServicio(Integer idServicio) {
         this.idServicio = idServicio;
     }
-
-
 
     public String getServiceName() {
         return serviceName;

@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class Advisory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idAsesoria;
+    private Integer idAsesoria;
 
     @Column(name = "DIA", nullable = false)
     private String dia;
@@ -34,7 +34,7 @@ public class Advisory {
     }
 
 
-    public Advisory (Long idAsesoria, String dia, Student student, ServicioXAdviser servicioAdviser) {
+    public Advisory (Integer idAsesoria, String dia, Student student, ServicioXAdviser servicioAdviser) {
 
         this.idAsesoria = idAsesoria;
         this.dia = dia;
@@ -42,11 +42,11 @@ public class Advisory {
         this.servicioAdviser= servicioAdviser;
     }
 
-    public Long getIdAsesoria() {
+    public Integer getIdAsesoria() {
         return idAsesoria;
     }
 
-    public void setIdAsesoria(Long idAsesoria) {
+    public void setIdAsesoria(Integer idAsesoria) {
         this.idAsesoria = idAsesoria;
     }
 

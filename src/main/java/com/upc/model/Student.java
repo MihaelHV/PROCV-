@@ -16,7 +16,7 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idStudent;
+    private Integer idStudent;
 
     @Column(name = "FIRSTNAME", length = 80, nullable = false)
     private String firstName;
@@ -39,11 +39,11 @@ public class Student {
 
 
 
-    public Long getIdStudent() {
+    public int getIdStudent() {
         return idStudent;
     }
 
-    public void setIdStudent(Long idStudent) {
+    public void setIdStudent(int idStudent) {
         this.idStudent = idStudent;
     }
 

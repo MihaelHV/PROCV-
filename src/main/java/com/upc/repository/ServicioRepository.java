@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import com.upc.model.Servicio;
 
 @Repository
-public interface ServicioRepository extends CrudRepository<Servicio, Long> {
+public interface ServicioRepository extends CrudRepository<Servicio, Integer> {
 
 
 }
